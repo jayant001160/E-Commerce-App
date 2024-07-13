@@ -41,11 +41,11 @@ class MyApp extends StatelessWidget {
           theme: themeProvider.isDarkMode ? ThemeData.dark() : ThemeData.light(),
           initialRoute: '/login',
           routes: {
-            '/login': (context) => LoginScreen(),
-            '/register': (context) => RegistrationScreen(),
-            '/home': (context) => HomeScreen(),
-            '/product': (context) => ProductDetailScreen(),
-            '/cart': (context) => CartScreen(),
+            '/login': (context) => const LoginScreen(),
+            '/register': (context) => const RegistrationScreen(),
+            '/home': (context) => const HomeScreen(),
+            '/product': (context) => const ProductDetailScreen(),
+            '/cart': (context) => const CartScreen(),
           },
         );
       },
